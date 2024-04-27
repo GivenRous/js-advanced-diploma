@@ -1,0 +1,35 @@
+{
+  "name": "js-advanced-diploma",
+  "version": "1.0.0",
+  "description": "###### tags: `netology` `advanced js`",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack serve",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GivenRous/js-advanced-diploma.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GivenRous/js-advanced-diploma.git"
+  },
+  "homepage": "https://github.com/GivenRous/js-advanced-diploma#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.24.4",
+    "babel": "^6.23.0",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^7.1.1",
+    "eslint": "^9.1.0",
+    "html-loader": "^5.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "jest": "^29.7.0",
+    "live-server": "^1.2.2",
+    "mini-css-extract-plugin": "^2.9.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
