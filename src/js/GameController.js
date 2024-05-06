@@ -18,10 +18,6 @@ export default class GameController {
   init() {
     this.gamePlay.drawUi(themes[this.level]);
 
-    if (this.stateService.storage.length > 0) {
-      this.gameState.bestPoints = this.stateService.load().bestPoints;
-    }
-
     this.gamePlay.addNewGameListener(this.newGame.bind(this));
     this.gamePlay.addSaveGameListener(this.saveGame.bind(this));
     this.gamePlay.addLoadGameListener(this.loadGame.bind(this));
