@@ -66,21 +66,21 @@ export default class Team {
       maxLevelNewCharacters = 1;
     }
     if (level === 3) {
-      countNewCharacters = 2;
-      maxLevelNewCharacters = 2;
+      countNewCharacters = 1;
+      maxLevelNewCharacters = 1;
     }
     if (level === 4) {
-      countNewCharacters = 2;
-      maxLevelNewCharacters = 3;
+      countNewCharacters = 1;
+      maxLevelNewCharacters = 1;
     }
     if (level > 4) {
-      minLevelNewCharacters = level - 4;
+      minLevelNewCharacters = 1;
 
       if (numberOfCharacters === 6) {
         countNewCharacters = 1;
       }
       if (numberOfCharacters <= 5) {
-        countNewCharacters = 2;
+        countNewCharacters = 1;
       }
       if (numberOfCharacters > 6) {
         return false;
@@ -105,18 +105,12 @@ export default class Team {
 
   compUpdateTeam(level, count) {
     let minCharLevel = 1;
-    if (level > 4) {
-      minCharLevel = level - 4;
-    }
     this.characters = generateTeam(
       this.#allowedTypesPlayerComp,
       minCharLevel,
       level,
       count
     );
-    this.characters.forEach((item) => {
-      this.updatesCharacteristics(item);
-    });
   }
 
   updatesCharacteristics(character) {

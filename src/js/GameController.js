@@ -401,7 +401,7 @@ export default class GameController {
     this.turn = true;
     this.gamePlay.drawUi(themes[this.setTheme()]);
     this.userTeam.playerUpdateTeam(this.level, this.userTeam.characters.length);
-    this.compTeam.compUpdateTeam(this.level, this.userTeam.characters.length);
+    this.compTeam.compUpdateTeam(1, this.userTeam.characters.length);
     this.characters = [];
     this.allowPlayerPositions = [];
     this.allowCompPositions = [];
